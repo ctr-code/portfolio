@@ -57,6 +57,10 @@
                 </p>
                 <!-- mb-5 gives extra margin spacing under lead text -->
                 <p class="lead mb-5">Let's create something amazing together!</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup-modal">
+                    Subscribe to my newsletter!
+                </button>
             </div>
         </section>
     </header>
@@ -198,6 +202,36 @@
             </div>
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Subscribe</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Join my newsletter for the latest updates on my projects, coding tips, and industry insights
+                        delivered straight to your inbox.
+                    </p>
+                    <form class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label for="signup-name" class="form-label">Full name</label>
+                            <input type="text" class="form-control" id="signup-name">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="signup-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="signup-email">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign up!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
